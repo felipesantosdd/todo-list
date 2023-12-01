@@ -1,6 +1,0 @@
-[submodule "back"]
-	path = back
-	url = https://github.com/felipesantosdd/todo_list_back
-[submodule "front"]
-	path = front
-	url = https://github.com/felipesantosdd/todo_list_front

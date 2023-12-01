@@ -11,9 +11,11 @@ O WebTaskManager é uma aplicação de gerenciamento de tarefas com um front-end
 
 ## Como Usar
 
-Video de apresentação: https://youtu.be/QLmA2j1PIKI
+Video de apresentação: https://www.youtube.com/watch?v=fYUX1KS5F_c
 
 ### Clonando os Repositórios
+
+Cada Repositorio tem seu proprio Readme, com instrucoes sobre o projeto.
 
 Repositorio back-end: https://github.com/felipesantosdd/todo_list_back
 
