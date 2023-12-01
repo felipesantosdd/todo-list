@@ -11,6 +11,8 @@ O WebTaskManager é uma aplicação de gerenciamento de tarefas com um front-end
 
 ## Como Usar
 
+Video de apresentação: https://www.youtube.com/watch?v=kUboAgc99dI
+
 ### Clonando os Repositórios
 
 Clone os três repositórios na mesma pasta:
@@ -30,7 +32,7 @@ mv todo_list_back back
 mv todo_list_front front
 ```
 
-### Iniciando os Contêineres
+### Iniciando os **Contêineres**
 
 Navegue até a pasta 'docker':
 
