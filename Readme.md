@@ -16,7 +16,6 @@ O WebTaskManager é uma aplicação de gerenciamento de tarefas com um front-end
 Clone os três repositórios na mesma pasta:
 
 ```bash
-git clone https://github.com/felipesantosdd/todo-list.git
 git clone https://github.com/felipesantosdd/todo_list_front.git
 git clone https://github.com/felipesantosdd/todo_list_back.git
 ```
