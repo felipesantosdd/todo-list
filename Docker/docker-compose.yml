@@ -15,8 +15,9 @@ services:
       - "3333:5432"
 
   api:
-    container_name: api
-    build: ../back/
+    container_name: backend_aplication
+    build:
+      context: ../back/
     depends_on:
       - db
     restart: always
@@ -27,8 +28,9 @@ services:
     command: sh -c "npm run typeorm migration:run -- -d src/data-source && npm run dev"
 
   application:
-    container_name: web_aplication
-    build: ../front/
+    container_name: web_application
+    build:
+      context: ../front/
     depends_on:
       - api
     restart: always
