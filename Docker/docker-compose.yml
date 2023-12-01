@@ -1,0 +1,39 @@
+version: "3.1"
+
+services:
+  db:
+    container_name: corelab_database
+    image: postgres:14.2-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=default
+      - POSTGRES_DB=corelab
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "3333:5432"
+
+  api:
+    container_name: api
+    build: ../back/
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "3001:3001"
+    volumes:
+      - ../back:/usr/app
+    command: sh -c "npm run typeorm migration:run -- -d src/data-source && npm run dev"
+
+  application:
+    container_name: web_aplication
+    build: ../front/
+    depends_on:
+      - api
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../front:/usr/app
+    command: sh -c "npm install && npm run dev"
