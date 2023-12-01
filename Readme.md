@@ -30,7 +30,7 @@ git clone https://github.com/felipesantosdd/todo_list_front.git
 git clone https://github.com/felipesantosdd/todo_list_back.git
 ```
 
-### Iniciando os **Contêineres**
+### Iniciando os Contêineres
 
 Navegue até a pasta 'docker':
 
