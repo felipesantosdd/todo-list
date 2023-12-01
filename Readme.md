@@ -18,7 +18,6 @@ Video de apresentação: https://www.youtube.com/watch?v=kUboAgc99dI
 Clone os três repositórios na mesma pasta:
 
 ```bash
-git clone https://github.com/felipesantosdd/todo-list.git
 git clone https://github.com/felipesantosdd/todo_list_front.git
 git clone https://github.com/felipesantosdd/todo_list_back.git
 ```
