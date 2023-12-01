@@ -11,13 +11,18 @@ O WebTaskManager é uma aplicação de gerenciamento de tarefas com um front-end
 
 ## Como Usar
 
-Video de apresentação: https://www.youtube.com/watch?v=kUboAgc99dI
+Video de apresentação: https://youtu.be/QLmA2j1PIKI
 
 ### Clonando os Repositórios
+
+Repositorio back-end: https://github.com/felipesantosdd/todo_list_back
+Repositorio Front-end: https://github.com/felipesantosdd/todo_list_front
 
 Clone os três repositórios na mesma pasta:
 
 ```bash
+git clone https://github.com/felipesantosdd/todo-list.git
+cd todo-list
 git clone https://github.com/felipesantosdd/todo_list_front.git
 git clone https://github.com/felipesantosdd/todo_list_back.git
 ```
@@ -25,11 +30,6 @@ git clone https://github.com/felipesantosdd/todo_list_back.git
 ### Renomeando as Pastas
 
 Renomeie as pastas para 'back' e 'front' respectivamente:
-
-```bash
-mv todo_list_back back
-mv todo_list_front front
-```
 
 ### Iniciando os **Contêineres**
 
