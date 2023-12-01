@@ -17,25 +17,25 @@ services:
   api:
     container_name: backend_aplication
     build:
-      context: ../back/
+      context: ../todo_list_back/
     depends_on:
       - db
     restart: always
     ports:
       - "3001:3001"
     volumes:
-      - ../back:/usr/app
+      - ../todo_list_back:/usr/app
     command: sh -c "npm install && npm run typeorm migration:run -- -d src/data-source && npm run dev"
 
   application:
     container_name: web_application
     build:
-      context: ../front/
+      context: ../todo_list_front/
     depends_on:
       - api
     restart: always
     ports:
       - "3000:3000"
     volumes:
-      - ../front:/usr/app
+      - ../todo_list_front:/usr/app
     command: sh -c "npm install && npm run dev"
